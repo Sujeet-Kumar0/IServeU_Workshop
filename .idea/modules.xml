@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/IServeU_Workshop.iml" filepath="$PROJECT_DIR$/.idea/modules/IServeU_Workshop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TC.iml" filepath="$PROJECT_DIR$/.idea/modules/TC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TC.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TC.app.iml" />
     </modules>
   </component>
 </project>
