@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TC">
         <activity
+            android:name=".HomePage"
+            android:exported="false" />
+        <activity
             android:name=".activity_login"
             android:exported="false" />
         <activity
