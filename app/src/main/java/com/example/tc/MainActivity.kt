@@ -15,10 +15,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        startbutton.setOnClickListener(
-            var intent = Intent(this,activity_login())
+        startbutton.setOnClickListener {
+            val intent = Intent(this, activity_login::class.java)
             startActivity(intent)
-        );
+        }
 
     }
 }
