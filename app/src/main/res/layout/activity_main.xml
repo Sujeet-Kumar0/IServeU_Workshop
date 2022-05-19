@@ -33,7 +33,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.559" />
 
-    <com.google.android.material.button.MaterialButton
+    <Button
         android:id="@+id/startbutton"
         style="@android:style/ButtonBar"
         android:layout_width="238dp"
@@ -46,5 +46,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appname"
         app:layout_constraintVertical_bias="0.24" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
