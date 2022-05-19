@@ -1,33 +1,30 @@
 package com.example.tc
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.widget.Button
-import androidx.fragment.app.Fragment
+import android.widget.*
+
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         supportActionBar?.hide()
         setContentView(R.layout.activity_main)
-        if (savedInstanceState == null) {
-            supportFragmentManager
-                .beginTransaction()
-                //.add(R.id.startbutton, activity_login())
-                .commit()
-        }
-    }
 
-    override fun navigateTo(fragment: Fragment, addToBackstack: Boolean) {
-        val transaction = supportFragmentManager
-            .beginTransaction()
-            //.replace(R.id.container, fragment)
+        lateinit var start : Button
+        start = findViewById<androidx.appcompat.widget.AppCompatButton>(R.id.startbutton)
 
-        if (addToBackstack) {
-            transaction.addToBackStack(null)
-        }
+        start.setOnClickListener();
 
-        transaction.commit()
     }
 }
+
+private fun Button.setOnClickListener() {
+    TODO("Not yet implemented")
+    //var intent = Intent(this,activity_login)
+}
+
+
+
