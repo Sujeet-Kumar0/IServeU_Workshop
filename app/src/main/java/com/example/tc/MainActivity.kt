@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
+import kotlinx.android.synthetic.main.activity_main.*
 
 
 
@@ -13,18 +14,20 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.hide()
         setContentView(R.layout.activity_main)
 
-        lateinit var start : Button
-        start = findViewById<androidx.appcompat.widget.AppCompatButton>(R.id.startbutton)
 
-        start.setOnClickListener();
+        startbutton.setOnClickListener(
+            var intent = Intent(this,activity_login())
+            startActivity(intent)
+        );
 
     }
 }
 
-private fun Button.setOnClickListener() {
-    TODO("Not yet implemented")
-    //var intent = Intent(this,activity_login)
-}
+//private fun Button.setOnClickListener() {
+//    //TODO("Not yet implemented")
+//    var intent = Intent(this,activity_login())
+//    startActivity(intent)
+//}
 
 
 

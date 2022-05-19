@@ -11,12 +11,12 @@ class HomePage : AppCompatActivity() {
         if (savedInstanceState == null) {
             supportFragmentManager
                 .beginTransaction()
-                .add(R.id.container, activity_login())
+                //.add(R.id.container, activity_login())
                 .commit()
         }
     }
 
-    override fun navigateTo(fragment: Fragment, addToBackstack: Boolean) {
+    fun navigateTo(fragment: Fragment, addToBackstack: Boolean) {
         val transaction = supportFragmentManager
             .beginTransaction()
         .replace(R.id.container, fragment)
@@ -28,5 +28,4 @@ class HomePage : AppCompatActivity() {
         transaction.commit()
     }
 }
-    }
-}
+
