@@ -6,22 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".activity_signup">
 
-    <TextView
-        android:id="@+id/new_user2"
-        android:layout_width="214dp"
-        android:layout_height="26dp"
-        android:text="Already have an account?"
-        android:textAlignment="center"
-        android:textColor="#228B22"
-        android:textSize="18dp"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.918"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.842" />
-
     <ImageView
         android:id="@+id/logo"
         android:layout_width="100dp"
@@ -51,17 +35,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.223" />
 
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.468"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.494" />
+<!--    <ProgressBar-->
+<!--        android:id="@+id/progressBar"-->
+<!--        style="?android:attr/progressBarStyle"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.468"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.494" />-->
 
     <EditText
         android:id="@+id/full_name"
@@ -176,21 +160,22 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.906" />
 
-    <TextView
-        android:id="@+id/new_user"
-        android:layout_width="88dp"
-        android:layout_height="32dp"
-        android:text="Login"
+    <Button
+        android:id="@+id/new_user2"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="183dp"
+        android:layout_height="77dp"
+        android:text="Already have an account?"
         android:textAlignment="center"
         android:textColor="#228B22"
-        android:textSize="18dp"
+        android:textSize="14dp"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.477"
-        app:layout_constraintStart_toEndOf="@+id/signup"
-        app:layout_constraintTop_toBottomOf="@+id/new_user2"
-        app:layout_constraintVertical_bias="0.113" />
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.908" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

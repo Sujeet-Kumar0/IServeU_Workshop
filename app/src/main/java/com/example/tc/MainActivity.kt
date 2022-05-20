@@ -23,11 +23,6 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
-//private fun Button.setOnClickListener() {
-//    //TODO("Not yet implemented")
-//    var intent = Intent(this,activity_login())
-//    startActivity(intent)
-//}
 
 
 
