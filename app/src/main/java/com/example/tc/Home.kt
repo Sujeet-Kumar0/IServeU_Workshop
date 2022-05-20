@@ -8,7 +8,7 @@ import kotlinx.android.synthetic.main.activity_home.*
 
 class Home : AppCompatActivity() {
 
-    lateinit var bottomNav : BottomNavigationView
+    private lateinit var bottomNav : BottomNavigationView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
